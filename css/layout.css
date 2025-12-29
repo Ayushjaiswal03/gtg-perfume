@@ -22,3 +22,38 @@
   align-items: center;
   justify-content: space-between;
 }
+
+
+/* =========================
+   HERO SECTION LAYOUT
+========================= */
+
+.hero {
+  width: 100%;
+  min-height: 794px;
+
+  background-image: url('../assets/images/hero/hero-bg.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  max-width: 1456.25px;
+  margin: 0 auto;
+  padding-left: 74px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hero-content {
+  width: 692px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
