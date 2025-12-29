@@ -15,8 +15,51 @@
 
 <body>
 <header class="site-header">
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="logo">
+      GTG
+    </div>
+
     <!-- Navigation -->
-  </header>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li class="nav-item active"><a href="#">Home</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="#">
+            Shop
+            <span class="chevron">▾</span>
+          </a>
+        </li>
+
+        <li class="nav-item"><a href="#">Fragrances</a></li>
+        <li class="nav-item"><a href="#">About Us</a></li>
+        <li class="nav-item"><a href="#">Blog</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Right Actions -->
+    <div class="header-actions">
+      <button class="search-btn" aria-label="Search">
+        <img src="assets/icons/search.svg" alt="Search" />
+      </button>
+
+      <a href="#" class="btn-primary">
+        Shop Now
+      </a>
+
+      <!-- Hamburger (hidden on desktop) -->
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
 
   <main>
     <section class="hero">
