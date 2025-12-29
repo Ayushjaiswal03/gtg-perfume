@@ -1,0 +1,33 @@
+/* ===== CSS RESET ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: #0f2e1f;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== CSS VARIABLES ===== */
+:root {
+  --primary: #0f5d3f;
+  --secondary: #e7f3ee;
+  --dark: #0b2a1e;
+  --light: #ffffff;
+  --radius: 12px;
+}
