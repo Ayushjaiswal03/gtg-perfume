@@ -25,3 +25,17 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .hero-container {
+    padding-left: 48px;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+  }
+}
+
