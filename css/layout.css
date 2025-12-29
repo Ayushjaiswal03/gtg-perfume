@@ -27,7 +27,6 @@
 /* =========================
    HERO SECTION LAYOUT
 ========================= */
-
 .hero {
   width: 100%;
   min-height: 794px;
@@ -37,23 +36,35 @@
   background-position: center bottom;
   background-repeat: no-repeat;
 
-  display: flex;
-  align-items: center;
+  position: relative;
+}
+
+/* Header sits on top */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .hero-container {
   max-width: 1456.25px;
   margin: 0 auto;
   padding-left: 74px;
+  padding-top: 180px; 
 
+  position: relative;
+  z-index: 2;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .hero-content {
-  width: 692px;
+   width: 692px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 28px;
+  box-sizing: border-box;
 }
+

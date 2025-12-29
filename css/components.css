@@ -138,6 +138,8 @@
 }
 
 .hero-badge {
+  width: fit-content;
+
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -172,13 +174,14 @@
 
 .hero-stats {
   display: flex;
-  gap: 24px;
+  gap: 32px;
+  margin-top: 12px;
 }
 
 .stat {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 12px;
 }
 
 .stat-value {
@@ -209,6 +212,8 @@
 }
 
 .btn-hero {
+  width: fit-content;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -231,4 +236,5 @@
 
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
+
 
