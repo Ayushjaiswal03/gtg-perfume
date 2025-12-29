@@ -1,0 +1,27 @@
+@media (max-width: 1024px) {
+  .main-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 24px;
+  }
+
+  .btn-primary {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mobile-menu.active {
+    display: block;
+  }
+}
+
