@@ -1376,3 +1376,135 @@
   }
 }
 
+/* =========================
+   COMPARISSION SECTION
+========================= */
+
+/*=====HEADER======*/
+.comparison-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.comparison-eyebrow {
+  display: block;
+  font-size: 18px;
+  letter-spacing: 6px;
+  color: #032E15;
+  margin-bottom: 12px;
+}
+
+.comparison-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #032E15;
+}
+
+/*=====TABLE======*/
+
+.comparison-table {
+  display: grid;
+  grid-template-columns:
+    240px   /* qualities */
+    180px   /* GTG */
+    180px   /* Arose */
+    180px   /* Bella */
+    180px;  /* Daisies */
+
+  border-top: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+}
+
+
+.comparison-row {
+  display: contents;
+}
+
+.comparison-row--header {
+  margin-bottom: 12px;
+}
+
+
+.comparison-cell {
+  padding: 18px 16px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #322D2D;
+  text-align: center;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+/* Left label column */
+.comparison-cell--label {
+  text-align: left;
+  font-weight: 400;
+  color: #6B6B6B;
+}
+
+.comparison-cell--brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.comparison-cell--brand img {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.comparison-cell--brand span {
+  font-size: 13px;
+  font-weight: 300;
+  color: #6B6B6B;
+}
+
+
+.comparison-cell--highlight {
+  background: #F1FFF6;
+  position: relative;
+}
+
+/* Rounded highlight column */
+.comparison-row:first-child .comparison-cell--highlight {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.comparison-row:last-child .comparison-cell--highlight {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.icon-check {
+  background: #032E15;
+  color: #ffffff;
+}
+
+.icon-cross {
+  border: 1px solid #B8B8B8;
+  color: #B8B8B8;
+}
+
+
+.comparison-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
