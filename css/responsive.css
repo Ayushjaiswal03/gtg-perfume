@@ -108,3 +108,154 @@
   }
 }
 
+/* =========================
+   COLLECTION – RESPONSIVE
+========================= */
+/* ===============================
+   TABLET & BELOW
+================================ */
+
+@media (max-width: 1024px) {
+  .collection-container {
+    display: flex;          /* enforce flex */
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+  }
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 780px) {
+  .collection {
+    padding: 72px 24px;
+    background: #ffffff; /* ensure no black bg */
+  }
+
+  .collection-layout {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+
+  .collection-container {
+    max-width: 720px;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  /* Title */
+  .collection-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  /* Accordion */
+  .collection-accordion {
+    width: 100%;
+  }
+
+  .accordion-item {
+    border-radius: 10px;
+  }
+
+  .accordion-header {
+    padding: 14px 18px;
+  }
+
+  .accordion-title {
+    font-size: 15px;
+  }
+
+  .accordion-body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Image */
+  .collection-image img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 18px;
+  }
+}
+
+
+/* ===============================
+   SMALL PHONES
+================================ */
+
+@media (max-width: 480px) {
+  .collection-container {
+    max-width: 100%;
+    padding: 0 12px;
+    gap: 20px;
+  }
+  .collection-layout {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+  .collection-title {
+    font-size: 20px;
+  }
+
+  .collection-image img {
+    max-width: 260px;
+  }
+
+  .accordion-header {
+    padding: 12px 16px;
+  }
+
+  .accordion-title {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 780px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+    padding: 0 24px;
+    align-items: center; 
+  }
+
+  .stat-card {
+    width: 100%;
+    max-width: 280px; 
+  }
+
+  .stat-value {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 0 10px;
+    align-items: center; /* 🔥 critical */
+  }
+
+  .stat-card {
+    width: 100%;
+    max-width: 320px; /* 👈 centered, not stretched */
+  }
+
+  .stat-value {
+    font-size: 36px;
+  }
+
+  .stat-text {
+    font-size: 13px;
+  }
+}

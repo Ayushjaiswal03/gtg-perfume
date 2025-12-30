@@ -77,3 +77,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
+//=======Stats section======
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".stats-section .stat", {
+  scrollTrigger: {
+    trigger: ".stats-section",
+    start: "top 80%",
+    once: true
+  },
+  opacity: 0,
+  y: 40,
+  duration: 0.8,
+  ease: "power3.out",
+  stagger: 0.15
+});

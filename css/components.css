@@ -1179,3 +1179,200 @@
 .subscription:not(.active) .subscription-body {
   pointer-events: none;
 }
+
+
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.collection-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-title {
+  font-family: Inter, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #032E15;
+  margin-bottom: 32px;
+}
+
+/* =========================
+   ACCORDION
+========================= */
+
+.collection-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1.01px solid #919798;
+
+}
+
+/* HEADER */
+.accordion-header {
+  width: 100%;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+
+  font-family: Inter, sans-serif;
+}
+
+.accordion-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #032E15;
+}
+
+.accordion-icon {
+  font-size: 22px;
+  font-weight: 500;
+  color: #032E15;
+}
+
+/* BODY */
+.accordion-body {
+  background: #ffffff; 
+  color: black;
+
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 150%;
+  
+
+  padding: 0 24px;
+  max-height: 0;
+  overflow: hidden;
+
+  transition:
+    max-height 0.45s ease,
+    padding 0.35s ease,
+    opacity 0.35s ease;
+
+  opacity: 0;
+}
+
+/* ACTIVE STATE */
+.accordion-item.active .accordion-body {
+  padding: 16px 24px 20px;
+  max-height: 200px;
+  opacity: 1;
+}
+
+.accordion-item.active .accordion-header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* =========================
+   RIGHT SIDE IMAGE
+========================= */
+
+.collection-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.collection-right img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+/* =========================
+   STATS SECTION
+========================= */
+
+.stats-section {
+  width: 100%;
+  padding: 72px 0;
+
+  background: linear-gradient(
+    180deg,
+    #032E15 0%,
+    #016630 100%
+  );
+}
+
+.stats-section .stat-value {
+  background: none;
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
+}
+
+.stats-container {
+  max-width: 1328px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+
+  padding: 0 64px;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.stat-text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================
+   STATS – HOVER GLOW
+========================= */
+
+
+.stats-section .stat-card {
+  border-radius: 16px; /* 👈 premium soft corners */
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+@media (hover: hover) {
+  .stats-section .stat-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+      0 18px 48px rgba(0, 201, 80, 0.28),  /* OUTER GLOW */
+      0 0 0 1px rgba(255, 255, 255, 0.14), /* SUBTLE BORDER */
+      inset 0 0 0 1px rgba(255,255,255,0.08);
+  }
+}
+

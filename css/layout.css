@@ -105,3 +105,25 @@
   flex-direction: column;
   gap: 24px;
 }
+
+/* =========================
+   COLLECTION SECTION
+========================= */
+
+.collection {
+  width: 100%;
+  background: #ffffff; 
+  padding: 120px 0;
+}
+
+.collection-container {
+  max-width: 1328px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+.collection-layout {
+  display: flex;
+  align-items: center;
+  gap: 96px;
+}
