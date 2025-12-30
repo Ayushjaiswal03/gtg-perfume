@@ -391,4 +391,91 @@
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* =========================
+   PRODUCT SECTION LAYOUT
+========================= */
 
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Main Image */
+.gallery-main {
+  position: relative;
+  width: 610px;
+  height: 673px;
+  border-radius: 15.17px;
+  overflow: hidden;
+  background: #f2f2f2;
+}
+
+.gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Controls */
+.gallery-controls {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+}
+
+/* Arrows */
+.gallery-arrow {
+  width: 38.9px;
+  height: 38.9px;
+  border-radius: 40px;
+  border: 0.81px solid #032E15;
+  background: rgba(255,255,255,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Dots */
+.gallery-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.gallery-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(3, 46, 21, 0.3);
+}
+
+.gallery-dots .dot.active {
+  background: #032E15;
+}
+
+.gallery-thumbs {
+  display: flex;
+  padding-left: 2.5%;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.thumb-row {
+  display: flex;
+  gap: 16px;
+}
+
+.thumb-row img {
+  width: 132px;
+  height: 130px;
+  border-radius: 16px;
+  object-fit: cover;
+  cursor: pointer;
+}

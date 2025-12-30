@@ -70,3 +70,22 @@
   box-sizing: border-box;
 }
 
+/* =========================
+   PRODUCT SECTION LAYOUT
+========================= */
+
+.product-section {
+  padding: 120px 0;
+}
+
+.product-container {
+  max-width: 1328px;
+  margin: 0 auto;
+}
+
+.product-layout {
+  display: grid;
+  grid-template-columns: 610px 1fr;
+  gap: 108px;
+  align-items: start;
+}
