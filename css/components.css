@@ -467,6 +467,15 @@
   gap: 16px;
 }
 
+.gallery-main img {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.gallery-main img.is-transitioning {
+  opacity: 0;
+  transform: scale(0.98);
+}
+
 .thumb-row {
   display: flex;
   gap: 16px;
@@ -478,4 +487,695 @@
   border-radius: 16px;
   object-fit: cover;
   cursor: pointer;
+}
+
+
+.product {
+  background: #000;
+  padding: 120px 0;
+}
+
+.product-container {
+  max-width: 1328px;
+  margin: auto;
+  display: flex;
+  gap: 92px;
+}
+
+/* ===== GALLERY ===== */
+.product-gallery {
+  width: 610px;
+}
+
+.gallery-main {
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.gallery-main img {
+  width: 100%;
+  transition: opacity 0.4s ease;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid #032e15;
+  background: #fff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.arrow.left { left: 16px; }
+.arrow.right { right: 16px; }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #bbb;
+}
+
+.dot.active {
+  background: #032e15;
+}
+
+.gallery-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.gallery-thumbnails img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+
+/* =====RIGHT===========*/
+
+/* =========================
+   PRODUCT RIGHT – BASE
+========================= */
+
+.product-right {
+  width: 610px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-right-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+
+/* =========================
+   PRODUCT HEADER
+========================= */
+
+.product-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-title {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 100%;
+  color: #032E15;
+}
+
+.product-reviews {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.product-reviews .stars {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #00C950;
+}
+
+.review-count {
+  font-size: 13px;
+  font-weight: 300;
+  color: #322D2D;
+}
+
+.product-description {
+  font-size: 16.18px;
+  font-weight: 300;
+  line-height: 100%;
+  color: #322D2D;
+  text-align: justify;
+}
+
+
+/* =========================
+   SUBSCRIPTIONS WRAPPER
+========================= */
+
+.subscriptions {
+  border: 1.01px solid #919798;
+  border-radius: 6.07px;
+  background: #ffffff;
+  overflow: visible;
+}
+
+
+/* =========================
+   MOST POPULAR BADGE
+========================= */
+
+.most-popular {
+  height: 43.48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    270deg,
+    #032E15 0%,
+    #008236 51.92%,
+    #00C950 100%
+  );
+
+  border-bottom: 1.01px solid #B8B8B8;
+}
+
+.most-popular span {
+  font-size: 20.23px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+/* =========================
+   SUBSCRIPTION LIST
+========================= */
+
+.subscription-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================
+   SUBSCRIPTION HEADER
+========================= */
+
+.subscription {
+  border-top: 1.01px solid #919798;
+}
+
+.subscription:first-child {
+  border-top: none;
+}
+
+.subscription-header {
+  height: 56.63px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  cursor: pointer;
+}
+
+.subscription-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.subscription-left input[type="radio"] {
+  width: 17px;
+  height: 17px;
+  accent-color: #00C950;
+}
+
+.subscription-header span {
+  font-size: 20px;
+  font-weight: 300;
+  color: #322D2D;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.price strong {
+  font-size: 20px;
+  font-weight: 700;
+  color: #032E15;
+}
+
+.price s {
+  font-size: 20px;
+  font-weight: 300;
+  color: #B8B8B8;
+}
+
+/* =========================
+   SUBSCRIPTION BODY (BASE)
+========================= */
+
+.subscription-body {
+  padding: 0 53px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* =========================
+   FRAGRANCE OPTIONS
+========================= */
+/* ============================
+   FRAGRANCE GROUP
+============================ */
+
+.fragrance-group {
+  width: 404.56px;
+  padding-left: 53px;
+  margin-bottom: 32px;
+}
+
+.fragrance-group > p {
+  font-size: 16.18px;
+  font-weight: 300;
+  color: #032E15;
+  margin-bottom: 8px;
+}
+
+/* ============================
+   OPTIONS ROW
+============================ */
+
+.fragrance-options {
+  display: flex;
+  gap: 16px;
+}
+
+/* ============================
+   FRAGRANCE CARD
+============================ */
+
+/* ===== Fragrance Card ===== */
+.fragrance-options label {
+  width: 127.11px;
+  height: 152.68px;
+  background-color: #F8F8F8;
+  border-radius: 6px;
+
+  padding: 10px 8px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Background image layer */
+.fragrance-options label::after {
+  content: '';
+  width: 54.88px;
+  height: 94px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+
+  
+  margin-top: auto;
+  margin-bottom: 6px;
+  align-self: center; 
+ 
+} 
+
+/* Assign images */
+.fragrance-card .original::after {
+  background-image: url('../assets/images/thumbnails/a206a3992f8dd3b83e58b96d68af3ba37d448aff.png');
+}
+
+.fragrance-card.lily::after {
+  background-image: url('../assets/images/thumbnails/a206a3992f8dd3b83e58b96d68af3ba37d448aff.png');
+}
+
+.fragrance-card.rose::after {
+  background-image: url('../assets/images/thumbnails/a206a3992f8dd3b83e58b96d68af3ba37d448aff.png');
+}
+
+
+/* hide native radio */
+.fragrance-options input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* ============================
+   RADIO
+============================ */
+
+.fragrance-options label::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 8px;
+
+  width: 9.98px;
+  height: 9.63px;
+  border-radius: 50%;
+  border: 0.82px solid rgba(3, 46, 21, 0.6);
+}
+
+.fragrance-options input:checked + span::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 10px;
+
+  width: 5.5px;
+  height: 5.3px;
+  border-radius: 50%;
+  background: #016630;
+}
+
+/* ============================
+   NAME
+============================ */
+
+.fragrance-options span {
+  align-self: flex-start;
+  margin-left: 18px;
+  margin-top: 2px;
+
+  font-size: 13.2px;
+  font-weight: 300;
+  color: #032E15;
+}
+
+/* ============================
+   IMAGE (LOWER POSITION)
+============================ */
+
+.fragrance-options img {
+  width: 74.88px;
+  height: 70.88px;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+/* ============================
+   BEST SELLER (ONLY FIRST)
+============================ */
+
+.fragrance-options label:first-child::after {
+  content: 'BEST-SELLER';
+  position: absolute;
+  top: -10px;
+  right: 3px;
+
+  font-size: 7.37px;
+  font-weight: 700;
+  color: #fff;
+
+  padding: 5.5px 5px;
+  border-radius: 4.95px;
+
+  background: linear-gradient(
+    180deg,
+    #032E15 0%,
+    #016630 100%
+  );
+}
+
+
+/* =========================
+   INCLUDED SECTION
+========================= */
+/* ============================
+   INCLUDED
+============================ */
+
+.included {
+  width: 500px;
+  padding-left: 53px;
+  margin-bottom: 24px;
+}
+
+.included > p {
+  font-size: 16.18px;
+  font-weight: 300;
+  margin-bottom: 12px;
+  color: #322D2D;
+}
+
+.included-boxes {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.included-box_single,
+.included-box_multi {
+  flex-shrink: 0;              /* 🔥 prevents collapse */
+  box-sizing: border-box;      /* 🔥 width means REAL width */
+  align-items: center;
+}
+
+/* ============================
+   INCLUDED CARD
+============================ */
+
+.included-box_single {
+  width: 160px;
+  height: 219.53px;
+
+  border: 1.01px solid #919798;
+  border-radius: 6.07px;
+  background: #ffffff;
+
+  padding: 10px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.included-box_multi {
+  width: 340px;
+  height: 219.53px;
+
+  border: 1.01px solid #919798;
+  border-radius: 6.07px;
+  background: #ffffff;
+
+  padding: 10px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.included-box span {
+  font-size: 16.18px;
+  font-weight: 300;
+  color: #6F7577;
+  margin-bottom: 8px;
+}
+
+/* ============================
+   SINGLE IMAGE
+============================ */
+
+.included-box > img {
+  width: 104px;
+  height: 104px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+
+  /* object-fit: contain; */
+}
+
+/* ============================
+   MULTI IMAGE ROW
+============================ */
+
+.included-box_multi .included-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.included-box_multi img {
+  width: 85px;
+  height: 85px;
+  /* object-fit: contain; */
+}
+
+
+/* ===== BENEFITS LIST ===== */
+
+.benefits {
+  list-style: none;
+  margin-top: 24px;
+  padding-left: 0;
+}
+
+.benefits li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  color: #322D2D;
+  margin-bottom: 8px;
+}
+
+/* optional green tick */
+.benefits li::before {
+  content: "✔";
+  font-size: 12px;
+  color: #00C950;
+}
+
+
+/* =========================
+   ADD TO CART
+========================= */
+
+.add-to-cart {
+  height: 52.27px;
+  border-radius: 505.64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18.2px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+
+  background: linear-gradient(
+    180deg,
+    #032E15 0%,
+    #016630 100%
+  );
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.add-to-cart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+/* =========================
+   ACCORDION CORE
+========================= */
+
+.subscription-body {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+
+  padding: 0 53px;
+
+  transition:
+    max-height 0.55s ease,
+    opacity 0.35s ease,
+    padding 0.35s ease;
+}
+
+.subscription.active .subscription-body {
+  max-height: 1200px; /* safe upper bound */
+  opacity: 1;
+  padding: 24px 53px 32px;
+}
+
+/* =========================
+   ACTIVE HEADER STATE
+========================= */
+
+.subscription.active .subscription-header {
+  background: rgba(0, 201, 80, 0.04);
+}
+
+.subscription.active .subscription-header span {
+  font-weight: 400;
+}
+
+
+.subscription-header input[type="radio"] {
+  accent-color: #00C950;
+  cursor: pointer;
+}
+
+
+/* =========================
+   HEADER DIVIDER
+========================= */
+
+.subscription-header::after {
+  content: '';
+  position: absolute;
+  left: 53px;
+  right: 53px;
+  bottom: 0;
+
+  height: 1.01px;
+  background: #919798;
+
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.subscription.active .subscription-header::after {
+  opacity: 1;
+}
+
+.subscription-header {
+  position: relative;
+}
+
+/* =========================
+   FRAGRANCE ACTIVE STATE
+========================= */
+
+.fragrance-options input[type="radio"] {
+  display: none;
+}
+
+.fragrance-options label {
+  transition: border 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid transparent;
+}
+
+.fragrance-options input:checked + span + img {
+  filter: none;
+}
+
+.fragrance-options input:checked ~ img,
+.fragrance-options input:checked + span {
+  border-color: #00C950;
+}
+
+.fragrance-options input:checked + span {
+  font-weight: 400;
+}
+
+.subscription:not(.active) .subscription-body {
+  pointer-events: none;
 }

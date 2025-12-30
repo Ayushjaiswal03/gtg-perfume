@@ -89,3 +89,19 @@
   gap: 108px;
   align-items: start;
 }
+
+.product-right {
+  width: 610px;
+  height: 1094.9px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-right-inner {
+  width: 610px;
+  height: 1018.63px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
