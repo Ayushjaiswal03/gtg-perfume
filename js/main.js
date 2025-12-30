@@ -1,5 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
 
+ScrollTrigger.config({
+  ignoreMobileResize: true,
+});
+
 
 gsap.utils.toArray(".hero-stat-value").forEach((el, index) => {
   const raw = el.innerText.trim();

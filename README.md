@@ -113,4 +113,9 @@ The project was built with a focus on:
 - Smooth user experience
 - Real-world e-commerce behavior
 
-All animations and interactions are intentionally subtle to match a premium brand feel.
+## Performance Optimizations
+
+- Implemented native image lazy loading using `loading="lazy"` and `decoding="async"` for all below-the-fold images
+- Deferred section animations using GSAP ScrollTrigger and IntersectionObserver to avoid unnecessary DOM work on initial load
+- Optimized scroll performance by triggering animations only when sections enter the viewport
+- Avoided lazy loading for critical above-the-fold content to maintain fast Largest Contentful Paint (LCP)
