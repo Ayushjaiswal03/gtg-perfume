@@ -153,3 +153,32 @@ document.addEventListener("DOMContentLoaded", () => {
     searchWrapper.querySelector("input")?.focus();
   });
 });
+
+
+//Footer reveal Animation
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".site-footer", {
+  scrollTrigger: {
+    trigger: ".site-footer",
+    start: "top 85%",
+    once: true
+  },
+  opacity: 0,
+  y: 60,
+  duration: 0.9,
+  ease: "power3.out"
+});
+
+gsap.from(".site-footer .footer-col, .site-footer .newsletter", {
+  scrollTrigger: {
+    trigger: ".site-footer",
+    start: "top 85%",
+    once: true
+  },
+  opacity: 0,
+  y: 30,
+  duration: 0.7,
+  stagger: 0.15,
+  ease: "power3.out"
+});

@@ -54,3 +54,55 @@ img {
   padding: 80px 24px;     
   box-sizing: border-box;
 }
+
+
+.gallery-arrow,
+.hamburger,
+.icon-btn {
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.gallery-arrow:hover,
+.hamburger:hover,
+.icon-btn:hover {
+  transform: scale(1.08);
+  background: rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+/* ===== GLOBAL BUTTON HOVER ===== */
+button,
+.add-to-cart,
+.shop-now,
+.subscribe-btn,
+a.button {
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+/* Lift + glow */
+button:hover,
+.add-to-cart:hover,
+.shop-now:hover,
+.subscribe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* Active press */
+button:active,
+.add-to-cart:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Outline / secondary buttons */
+.button-outline:hover {
+  background: #032E15;
+  color: #ffffff;
+}
