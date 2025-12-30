@@ -83,28 +83,39 @@
   margin: 0 auto;
 }
 
+.product-container {
+    display: flex;
+    justify-content: center;
+  }
+
 .product-layout {
   display: grid;
-  grid-template-columns: 610px 1fr;
-  gap: 108px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 80px;
   align-items: start;
 }
 
+.product-gallery,
+.product-right {
+  width: 100%;
+  max-width: 610px;
+}
+
+
+
 .product-right {
   width: 610px;
-  height: 1094.9px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-right-inner {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.product-right-inner {
-  width: 610px;
-  height: 1018.63px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
 
 /* =========================
    COLLECTION SECTION

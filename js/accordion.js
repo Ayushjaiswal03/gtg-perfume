@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!accordionItems.length) return;
 
-  // 🔥 Ensure first accordion is open by default
+  // Ensure first accordion is open by default
   accordionItems.forEach((item, index) => {
     const icon = item.querySelector(".accordion-icon");
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 🔁 Click handling
+  //  Click handling
   accordionItems.forEach(item => {
     const header = item.querySelector(".accordion-header");
     const icon = item.querySelector(".accordion-icon");
